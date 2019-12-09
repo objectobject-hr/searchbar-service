@@ -1,0 +1,53 @@
+.searchbar {
+    font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', sans-serif !important;
+    background: #fff;
+    color: #111;
+    min-height: 100%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font: 100% sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  min-height: 4rem;
+}
+
+.header-top-menu-full {
+  background-color: #eee;
+  width: 100%;
+}
+
+.header-top-menu-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-top: .4rem;
+  padding-bottom: .6rem;
+}
+
+.header-top-menu-link {
+    margin: 0 1rem;
+    padding: 1rem .5rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.searchbar-a {
+  background: transparent;
+  background-color: transparent;
+}
+
+.header-top-menu-item {
+  font-size: 0.75rem;
+}
+
+.searchbar-div {
+  display: block;
+}
