@@ -1,3 +1,7 @@
+a {
+  background-color: transparent;
+}
+
 .searchbar {
     font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', sans-serif !important;
     background: #fff;
@@ -15,6 +19,10 @@
   display: flex;
   position: relative;
   min-height: 4rem;
+}
+
+.header__h6 {
+  font-size: 0.75rem;
 }
 
 .header-top-menu-full {
@@ -52,3 +60,64 @@
   display: block;
 }
 
+.search-box {
+  position: relative;
+  z-index: 9;
+  line-height: 1.5rem;
+  background: #fff;
+}
+
+.search-field {
+  position: relative;
+  max-width: 88rem;
+  padding: .5rem 0;
+  margin: 0 1rem;
+}
+
+.search-field__input {
+  display: block;
+  width: 100%;
+  padding: .75rem 7.25rem .75rem 3.25rem;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #eee;
+  border: 0;
+  border-radius: 50em;
+  outline: 0;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 50%;
+  left: 3.25rem;
+  color: #666;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.top-menu__contend-d {
+  display: flex;
+  flex-direction: row;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-top: .4rem;
+  padding-bottom: .6rem;
+}
+
+.top-menu-d {
+  background-color: #eee;
+  width: 100%
+}
+
+.top-menu__item {
+  list-style-type: none;
+}
+
+.top-menu__link-d {
+  margin: 0 1rem;
+  padding: 1rem .5rem;
+  color: #666;
+  text-decoration: none;
+}
