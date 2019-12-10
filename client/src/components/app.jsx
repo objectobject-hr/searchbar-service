@@ -10,9 +10,10 @@ class App extends React.Component {
       
     }
   }
+
   render() {
     return (
-      <div class="searchbar-div">
+      <div class="searchbar">
           <Cabeza />
           <div class="searchbar-div" data-namespace="search-box-overlay"></div>
           <SearchBar />

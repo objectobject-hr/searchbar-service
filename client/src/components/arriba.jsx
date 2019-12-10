@@ -8,34 +8,34 @@ const Arriba = (props) => (
             <span class="top-menu__item header__h6">Customer Service</span>
           </a>
         </li>
-        <li class="header-top-menu-items">
-          <a class="header-top-menu-link">
-            <span class="header-top-menu-item">IKEA Family</span>
+        <li class="top-menu__item">
+          <a class="top-menu__link-d">
+            <span class="top-menu__item header__h6">IKEA Family</span>
           </a>
         </li>
-        <li class="header-top-menu-items">
-          <a class="header-top-menu-link">
-            <span class="header-top-menu-item">IKEA For Business</span>
+        <li class="top-menu__item">
+          <a class="top-menu__link-d">
+            <span class="top-menu__item header__h6">IKEA for Business</span>
           </a>
         </li>
-        <li class="header-top-menu-items">
-        <a class="header-top-menu-link">
-          <span class="header-top-menu-item">IKEA planning Tools</span>
-        </a>
-        </li>
-        <li class="header-top-menu-items">
-          <a class="header-top-menu-link">
-            <span class="header-top-menu-item">Track My Order</span>
+        <li class="top-menu__item">
+          <a class="top-menu__link-d">
+            <span class="top-menu__item header__h6">IKEA Planning Tools</span>
           </a>
         </li>
-        <li class="header-top-menu-items">
-          <a class="header-top-menu-link">
-            <span class="header-top-menu-item">Find a Location</span>
+        <li class="top-menu__item">
+          <a class="top-menu__link-d">
+            <span class="top-menu__item header__h6">Track My Order</span>
           </a>
         </li>
-        <li class="header-top-menu-items">
-          <a class="header-top-menu-link">
-            <span class="header-top-menu-item">Credit Card</span>
+        <li class="top-menu__item">
+          <a class="top-menu__link-d">
+            <span class="top-menu__item header__h6">Find a Location</span>
+          </a>
+        </li>
+        <li class="top-menu__item">
+          <a class="top-menu__link-d">
+            <span class="top-menu__item header__h6">Credit Card</span>
           </a>
         </li>
       </ul>
