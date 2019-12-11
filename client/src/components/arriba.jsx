@@ -1,45 +1,20 @@
 import React from 'react';
 
+var cats = ['Customer Service', 'IKEA Family', 'IKEA for Business', 'IKEA Planning Tools', 'Track My Order', 'Find a Location', 'Credit Card'];
+var links = ["https://info.ikea-usa.com/family/"];
+
 const Arriba = (props) => (
-    <div class="top-menu-d">
-      <ul class="top-menu__contend-d">
+  <div class="top-menu-d">
+    <ul class="top-menu__contend-d">
+      {cats.map((item, i) => (
         <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">Customer Service</span>
+          <a href="https://www.ikea.com/us/en/customer-service/?itm_campaign=TopHeader&amp;itm_element=NavLevel1&amp;itm_content=TopNav>CustomerService" class="top-menu__link-d">
+            <span class="top-menu__item header__h6" key={i}>{item}</span>
           </a>
         </li>
-        <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">IKEA Family</span>
-          </a>
-        </li>
-        <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">IKEA for Business</span>
-          </a>
-        </li>
-        <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">IKEA Planning Tools</span>
-          </a>
-        </li>
-        <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">Track My Order</span>
-          </a>
-        </li>
-        <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">Find a Location</span>
-          </a>
-        </li>
-        <li class="top-menu__item">
-          <a class="top-menu__link-d">
-            <span class="top-menu__item header__h6">Credit Card</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+      ))}
+    </ul>
+  </div>
 )
 
 export default Arriba;

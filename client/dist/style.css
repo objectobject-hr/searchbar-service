@@ -1,3 +1,9 @@
+@import "compass/css3";
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
 a {
   background-color: transparent;
   color: #0058a3;
@@ -267,6 +273,10 @@ img {
   font-size: 16px;
 }
 
+.main-bygga-menu__item:hover {
+  text-decoration: underline;
+}
+
 .main-bygga-menu__link {
   display: block;
   text-decoration: none;
@@ -340,7 +350,9 @@ img {
   padding-left: 5px;
   margin: 0;
   list-style: none;
+  animation: fadeIn 2s infinite alternate;
 }
+
 
 .top-menu__contend-d {
   display: flex;
@@ -362,9 +374,17 @@ img {
   list-style-type: none;
 }
 
+.top-menu__item:hover {
+  text-decoration: underline;
+}
+
 .top-menu__link-d {
   margin: 0 1rem;
   padding: 1rem .5rem;
   color: #666;
   text-decoration: none;
+}
+
+.top-menu__link-d:hover {
+  color: #4483ba;
 }
