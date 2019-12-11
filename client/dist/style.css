@@ -26,7 +26,7 @@ img {
 .header {
   display: flex;
   position: relative;
-  min-height: 4rem;
+  min-height: 1rem;
   flex: none;
   flex-direction: column;
   margin: 0;
@@ -44,6 +44,10 @@ img {
 
 .header__h6 {
   font-size: 0.75rem;
+}
+
+.header__icon-list-item {
+  display: inline-block;
 }
 
 .header__ikea-logo {
@@ -80,6 +84,11 @@ img {
   overflow: visible;
 }
 
+.header__quick-nav {
+  display: inline-block;
+
+}
+
 .header__sr-only {
   position: absolute;
   width: 1px;
@@ -106,6 +115,10 @@ img {
   padding-bottom: .6rem;
 }
 
+.header-top-menu-item {
+  font-size: 0.75rem;
+}
+
 .header-top-menu-link {
     margin: 0 1rem;
     padding: 1rem .5rem;
@@ -120,17 +133,49 @@ img {
   background: #fff;
 }
 
-.hnf-link--black {
-  color: #111;
-  fill: #111;
+.hnf-btn__badge {
+  position: absolute;
+  top: -.25rem;
+  transform: translateX(-.5rem);
+  background: #ffdb00;
+  padding: 0 .295rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: .75rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 5rem;
+  overflow: hidden;
+  left: 100%;
+  line-height: 1.334;
 }
 
-.hnf-svg-icon {
-  vertical-align: top;
+.hnf-btn__copy {
+  color: #111;
+  position: relative;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 0;
+  float: left;
+}
+
+.hnf-btn--icon {
+  vertical-align: middle;
+  text-align: center;
   display: inline-block;
-  fill: #111;
-  transition-property: transform, fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0, 1)
+  text-decoration: none;
+  border: 0;
+  font-weight: 700;
+  font-size: .875rem;
+  transition-property: background-color,border-radius,width;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+  background: rgba(0,0,0,0);
+  border-radius: 50%;
+  padding: .75rem;
+  line-height: 0;
+  position: relative;
 }
 
 .hnf-btn__icon-bg {
@@ -147,6 +192,27 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
 }
 
+.hnf-btn__label {
+  text-indent: -999px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.hnf-link--black {
+  color: #111;
+  fill: #111;
+}
+
+.hnf-svg-icon {
+  vertical-align: top;
+  display: inline-block;
+  fill: #111;
+  transition-property: transform, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1)
+}
+
 .hnf-svg-icon--100 {
   margin-left: .25rem;
   width: 1rem;
@@ -158,17 +224,6 @@ img {
   background-color: transparent;
 }
 
-.header-top-menu-item {
-  font-size: 0.75rem;
-}
-
-.hnf-btn__label {
-  text-indent: -999px;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
 
 .main-bygga-menu {
   display: flex;
@@ -192,6 +247,7 @@ img {
   white-space: nowrap;
   font-size: 16px;
 }
+
 .main-bygga-menu__button--svg {
   position: static;
   transition-duration: 0s;
@@ -221,6 +277,10 @@ img {
   display: block;
 }
 
+.searchbar-padder {
+  padding: 0px 10px 0px 10px;
+}
+
 .search-box {
   position: relative;
   z-index: 9;
@@ -233,7 +293,20 @@ img {
   max-width: 88rem;
   padding: .5rem 0;
   margin: 0 1rem;
+  padding-top: 1px;
 }
+
+/* .search-field:before {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  pointer-events: none;
+  content: "";
+  transform: translateY(-50%);
+  background: url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+} */
 
 .search-field__input {
   display: block;
@@ -251,10 +324,17 @@ img {
 .search-suggestions {
   position: absolute;
   top: 50%;
-  left: 3.25rem;
+  left: .4rem;
   color: #666;
   pointer-events: none;
   transform: translateY(-50%);
+}
+
+.search-suggestions__list {
+  display: inline-block;
+  padding-left: 5px;
+  margin: 0;
+  list-style: none;
 }
 
 .top-menu__contend-d {
@@ -269,7 +349,8 @@ img {
 
 .top-menu-d {
   background-color: #eee;
-  width: 100%
+  width: 100%;
+  padding: 0;
 }
 
 .top-menu__item {
