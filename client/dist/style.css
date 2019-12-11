@@ -36,9 +36,10 @@ img {
 }
 
 .header__container {
-  padding: 0 1rem;
+  padding: .5rem 1rem .5rem 3rem;
   margin: auto;
   max-width: 90rem;
+  max-height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,6 +51,10 @@ img {
 
 .header__icon-list-item {
   display: inline-block;
+}
+
+.header__icon-list {
+  padding-right: 40px;
 }
 
 .header__ikea-logo {
@@ -88,7 +93,6 @@ img {
 
 .header__quick-nav {
   display: inline-block;
-
 }
 
 .header__sr-only {
@@ -287,13 +291,13 @@ img {
   z-index: 9;
   line-height: 1.5rem;
   background: #fff;
-  padding-left: 13rem;
+  padding-left: 14rem;
 }
 
 .search-field {
   position: relative;
   max-width: 88rem;
-  padding: .5rem 0;
+  padding: 0 0 .5rem 0;
   margin: 0 1rem;
 }
 
