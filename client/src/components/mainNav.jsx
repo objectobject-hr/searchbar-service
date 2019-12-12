@@ -5,7 +5,7 @@ const MainNav = (props) => (
     <div class="header__main-nav--wrapper">
       <ul class="main-bygga-menu" data-menu-links>
         <li class="main-bygga-menu__item">
-          <a href="https://wwww.ikea.com/us/en/ikea-family/" class="main-bygga-menu__link hnf-link--black">
+          <a href="https://wwww.ikea.com/us/en/ikea-family/" class="sb-a main-bygga-menu__link hnf-link--black">
             <span class="main-bygga-menu__title">Offers</span>
           </a>
         </li>
@@ -26,12 +26,12 @@ const MainNav = (props) => (
           </button>
         </li>
         <li class="main-bygga-menu__item">
-          <a href="https://wwww.ikea.com/us/en/ikea-family/" class="main-bygga-menu__link hnf-link--black">
+          <a href="https://wwww.ikea.com/us/en/ikea-family/" class="sb-a main-bygga-menu__link hnf-link--black">
             <span class="main-bygga-menu__title">Ideas & Inspiration</span>
           </a>
         </li>
         <li class="main-bygga-menu__item">
-          <a href="https://wwww.ikea.com/us/en/ikea-family/" class="main-bygga-menu__link hnf-link--black">
+          <a href="https://wwww.ikea.com/us/en/ikea-family/" class="sb-a main-bygga-menu__link hnf-link--black">
             <span class="main-bygga-menu__title">New at IKEA</span>
           </a>
         </li>

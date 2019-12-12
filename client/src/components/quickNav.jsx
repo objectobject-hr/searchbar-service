@@ -4,7 +4,7 @@ const QuickNav = (props) => (
   <nav class="header__quick-nav">
     <ul class="header__icon-list" data-shopping-links>
       <li class="header__icon-list-item">
-        <a class="hnf-btn hnf-btn--icon" href="https://secure.ikea.com/webapp/wcs/stores/servlet/lononForm?storeId=12&landId=-1" title="My Profile" data-profile-link>
+        <a class="sb-a hnf-btn hnf-btn--icon" href="https://secure.ikea.com/webapp/wcs/stores/servlet/lononForm?storeId=12&landId=-1" title="My Profile" data-profile-link>
           <span class="hnf-btn__icon-bg"></span>
           <span class="hnf-btn__copy">
             <svg class="hnf-svg-icon" focusable="false" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" >
@@ -15,7 +15,7 @@ const QuickNav = (props) => (
         </a>
       </li> 
       <li class="header__icon-list-item">
-        <a class="hnf-btn hnf-btn--icon" href="https://order.ikea.com/us/en/checkout/shoppinglist/" title="Shopping List" data-profile-link>
+        <a class="sb-a hnf-btn hnf-btn--icon" href="https://order.ikea.com/us/en/checkout/shoppinglist/" title="Shopping List" data-profile-link>
           <span class="hnf-btn__icon-bg"></span>
           <span class="hnf-btn__copy">
             <svg class="hnf-svg-icon" focusable="false" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" >
@@ -26,7 +26,7 @@ const QuickNav = (props) => (
         </a>
       </li> 
       <li class="header__icon-list-item">
-        <a class="hnf-btn hnf-btn--icon" href="https://secure.ikea.com/us/en/mcommerce/shoppingcart" title="Shopping bag" data-profile-link>
+        <a class="sb-a hnf-btn hnf-btn--icon" href="https://secure.ikea.com/us/en/mcommerce/shoppingcart" title="Shopping bag" data-profile-link>
           <span class="hnf-btn__icon-bg"></span>
           <span class="hnf-btn__copy js-shopping-cart-icon">
             <svg class="hnf-svg-icon" focusable="false" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" >

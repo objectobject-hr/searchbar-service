@@ -8,7 +8,7 @@ const Arriba = (props) => (
     <ul class="top-menu__contend-d">
       {cats.map((item, i) => (
         <li class="top-menu__item">
-          <a href="https://www.ikea.com/us/en/customer-service/?itm_campaign=TopHeader&amp;itm_element=NavLevel1&amp;itm_content=TopNav>CustomerService" class="top-menu__link-d">
+          <a href="https://www.ikea.com/us/en/customer-service/?itm_campaign=TopHeader&amp;itm_element=NavLevel1&amp;itm_content=TopNav>CustomerService" class="top-menu__link-d sb-a">
             <span class="top-menu__item header__h6" key={i}>{item}</span>
           </a>
         </li>

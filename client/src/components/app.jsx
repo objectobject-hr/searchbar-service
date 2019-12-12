@@ -33,7 +33,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class="searchbar">
+      <div class="sb-searchbar">
           <Cabeza />
           <div class="searchbar-div" data-namespace="search-box-overlay"></div>
           <SearchBar flasher={this.state.flasher}/>
