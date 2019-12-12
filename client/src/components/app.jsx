@@ -8,10 +8,19 @@ class App extends React.Component {
     super(props);
     this.state = {
       flasher: "",
+      searchText: "test"
     }
     this.flasher = this.flasher.bind(this);
     this.componentDidMount = this.componentDidMount.bind(this);
     this.getProducts = this.getProducts.bind(this);
+    this.searchType = this.searchType.bind(this);
+  }
+
+  searchType(e) {
+    this.setState({
+      searchText: e.target.value
+    });
+    console.log(this.state.searchText);
   }
 
   getProducts() {
@@ -37,7 +46,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.flasher();
+    //this.flasher();
     this.getProducts();
   }
 
@@ -46,7 +55,7 @@ class App extends React.Component {
       <div>
           <Cabeza />
           <div data-namespace="search-box-overlay"></div>
-          <SearchBar flasher={this.state.flasher}/>
+          <SearchBar flasher={this.state.flasher} searchText={this.state.searchText}/>
       </div>
     )
   }
