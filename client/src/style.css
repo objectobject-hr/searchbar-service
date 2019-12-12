@@ -26,7 +26,8 @@
     height: 100%;
     font: 100% sans-serif;
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    width: 200%;
 }
 
 .sb-header {
@@ -289,7 +290,8 @@
 }
 
 .searchbar-div {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .searchbar-padder {
@@ -301,14 +303,18 @@
   z-index: 9;
   line-height: 1.5rem;
   background: #fff;
-  padding-left: 14rem;
+  /* padding-left: 14rem; */
+  display: flex;
+  justify-content: center;
 }
 
 .search-field {
   position: relative;
-  max-width: 88rem;
+  width: 100%;
+  max-width: 1414px;
   padding: 0 0 .5rem 0;
   margin: 0 1rem;
+  /* background-color: #0058a3; */
 }
 
 /* .search-field:before {
