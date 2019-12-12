@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchBar = (props) => (
+const SearchBar = ({flasher}) => (
   <div data-namespace="search-box" data-version="v1.130.0">
     <form role="search" action="https://www.ikea.com/us/en/search/" class="search-box">
       <div class="search-field">
@@ -15,7 +15,7 @@ const SearchBar = (props) => (
           </span>
           Search for
           <ul class="search-suggestions__list searchbar-padder">
-            <li aria-hidden="false">categories</li>
+            <li aria-hidden="false">{flasher}</li>
           </ul>
         </span>    
       </div>

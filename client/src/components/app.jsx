@@ -7,8 +7,28 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      flasher: "",
     }
+    this.flasher = this.flasher.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
+  }
+
+  flasher() {
+    var lightning = ['categories', 'content', 'products'];
+    var counter = 0;
+    setInterval(() => {
+      this.setState({
+        flasher: lightning[counter],
+      })
+      counter++;
+      if (counter === 3) {
+        counter = 0;
+      }
+    }, 3000);
+  }
+
+  componentDidMount() {
+      this.flasher()
   }
 
   render() {
@@ -16,7 +36,7 @@ class App extends React.Component {
       <div class="searchbar">
           <Cabeza />
           <div class="searchbar-div" data-namespace="search-box-overlay"></div>
-          <SearchBar />
+          <SearchBar flasher={this.state.flasher}/>
       </div>
     )
   }
