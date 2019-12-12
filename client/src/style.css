@@ -26,8 +26,7 @@
     height: 100%;
     font: 100% sans-serif;
     box-sizing: border-box;
-    display: flex;
-    width: 100%;
+    width: 99%;
 }
 
 .sb-header {
@@ -289,10 +288,9 @@
   white-space: nowrap;
 }
 
-.searchbar-div {
+/* .searchbar-div {
   display: flex;
-  justify-content: center;
-}
+} */
 
 .searchbar-padder {
   padding: 0px 10px 0px 10px;
@@ -373,7 +371,7 @@
 
 .top-menu-d {
   background-color: #eee;
-  width: 100%;
+  width: 99%;
   padding: .3rem .3rem .1rem .3rem ;
 }
 

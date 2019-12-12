@@ -43,9 +43,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class="sb-searchbar">
+      <div>
           <Cabeza />
-          <div class="searchbar-div" data-namespace="search-box-overlay"></div>
+          <div data-namespace="search-box-overlay"></div>
           <SearchBar flasher={this.state.flasher}/>
       </div>
     )
