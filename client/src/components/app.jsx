@@ -11,6 +11,15 @@ class App extends React.Component {
     }
     this.flasher = this.flasher.bind(this);
     this.componentDidMount = this.componentDidMount.bind(this);
+    this.getProducts = this.getProducts.bind(this);
+  }
+
+  getProducts() {
+    axios.get(`/allProducts`)
+    .then(({data}) => {
+      console.log(data);
+    })
+    .catch((err) => console.error(err));
   }
 
   flasher() {
@@ -28,7 +37,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-      this.flasher()
+    this.flasher();
+    this.getProducts();
   }
 
   render() {
