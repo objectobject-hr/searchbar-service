@@ -11,10 +11,25 @@ db.connect((err) => {
   }
 })
 
-const response = (err, result, callback) => {
-    if (err) {
-      callback(err);
-    } else {
-      callback(null, result);
-    }
-};
+// const response = (err, result, callback) => {
+//     if (err) {
+//       callback(err);
+//     } else {
+//       callback(null, result);
+//     }
+// };
+
+const getProducts = function(id, callback) {
+  db.query(`SELECT * FROM cranberries`, (err, result) => {
+  if (err) {
+    console.error(err);
+    callback(err);
+  } else {
+    callback(null, result);
+  }
+  });
+}
+
+module.exports = {
+  getProducts
+} ;
