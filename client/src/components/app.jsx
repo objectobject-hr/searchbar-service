@@ -46,7 +46,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    //this.flasher();
+    this.flasher();
     this.getProducts();
   }
 
