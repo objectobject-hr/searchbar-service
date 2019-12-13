@@ -9,8 +9,8 @@ const SearchDrop = () => (
         <h2 className="sb-search-results__heading">Popular searches</h2>
         <ol className="dd-sb-search-results__list">
           {pops.map((item, i) => (
-            <li class="dd-sb-search-results__list" key={i}>
-              <a class="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=${item}`}>
+            <li className="dd-sb-search-results__list" key={i}>
+              <a className="dd-sb-search-results-item__link sb-a" href={`https://www.ikea.com/us/en/search/?q=${item}`}>
                 {item}
               </a>
             </li>

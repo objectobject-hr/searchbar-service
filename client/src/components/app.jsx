@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Cabeza from './cabeza.jsx';
 import SearchBar from './searchBar.jsx';
+import '../style.css';
 
 class App extends React.Component {
   constructor(props) {
