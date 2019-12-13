@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchDrop from './searchDrop.jsx';
 
 const SearchBar = ({flasher, searchText, searchType}) => (
   <div data-namespace="search-box" data-version="v1.130.0">
@@ -25,6 +26,7 @@ const SearchBar = ({flasher, searchText, searchType}) => (
           )}
         </span>    
       </div>
+      <SearchDrop />
     </form>
   </div>  
 )
