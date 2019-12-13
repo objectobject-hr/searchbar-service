@@ -5,7 +5,7 @@ import DropContent from './dropContent.jsx';
 const SearchBar = ({flasher, searchText, searchType, show, onClose}) => (
   <div data-version="v1.130.0">
     <form role="search" action="https://www.ikea.com/us/en/search/" className="search-box">
-      <div style={{padding: '0 8px 0px 8px', display: 'flex', justifyContent: 'center'}}>
+      <div style={{padding: '0 8px 0 0', display: 'flex', justifyContent: 'center'}}>
         <div className="search-field">
           <span className="hnf-btn__icon-bg"></span>
           <input type="search" value={searchText} onClick={onClose} onChange={searchType} name="q" className="search-field__input" spellCheck="false" aria-label="Search by product" aria-placeholder="Search by product" autoCapitalize="off" autoComplete="off" autoCorrect="off"></input>    

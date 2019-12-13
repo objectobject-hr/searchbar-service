@@ -32,9 +32,9 @@ class SearchDrop extends React.Component {
           {this.props.children}
           
           <div className="footer">
-            <button onClick={this.props.onClose}>
+            {/* <button onClick={this.props.onClose}>
               Close
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
