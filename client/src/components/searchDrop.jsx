@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-var pops = ["desk", "dresser", "tv stand", "mirror", "shelves", "kallax"];
-
 class SearchDrop extends React.Component {
   render() {
     if(!this.props.show) {
@@ -32,18 +30,7 @@ class SearchDrop extends React.Component {
       <div className="sb-dropdown backdrop" style={{backdropStyle}}>
         <div className="sb-search-results modal" style={{modalStyle}}>
           {this.props.children}
-          <div className="sb-search-results__container">
-            <h2 className="sb-search-results__heading">Popular searches</h2>
-            <ol className="dd-sb-search-results__list">
-              {pops.map((item, i) => (
-                <li className="dd-sb-search-results__list" key={i}>
-                  <a className="dd-sb-search-results-item__link sb-a" href={`https://www.ikea.com/us/en/search/?q=${item}`}>
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </div>
+          
           <div className="footer">
             <button onClick={this.props.onClose}>
               Close

@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import Cabeza from './cabeza.jsx';
 import SearchBar from './searchBar.jsx';
-import PropTypes from 'prop-types';
 import '../style.css';
 
 class App extends React.Component {
@@ -10,12 +9,21 @@ class App extends React.Component {
     super(props);
     this.state = {
       flasher: "",
-      searchText: ""
-    }
+      searchText: "",
+      barOpen: false
+    };
+
     this.flasher = this.flasher.bind(this);
     this.componentDidMount = this.componentDidMount.bind(this);
     this.getProducts = this.getProducts.bind(this);
     this.searchType = this.searchType.bind(this);
+    this.barToggle = this.barToggle.bind(this);
+  }
+
+  barToggle() {
+    this.setState({
+      barOpen: !this.state.barOpen
+    });
   }
 
   searchType(e) {
@@ -60,7 +68,7 @@ class App extends React.Component {
       <div className="sb-searchbar">
           <Cabeza />
           <div data-namespace="search-box-overlay"></div>
-          <SearchBar flasher={this.state.flasher} searchText={this.state.searchText} searchType={this.searchType}/>
+          <SearchBar flasher={this.state.flasher} searchText={this.state.searchText} searchType={this.searchType} show={this.state.barOpen} onClose={this.barToggle}/>
       </div>
     )
   }
