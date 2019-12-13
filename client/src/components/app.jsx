@@ -22,6 +22,9 @@ class App extends React.Component {
       searchText: e.target.value
     });
     console.log(this.state.searchText);
+    if (this.state.searchText.length === 0) {
+      this.flasher();
+    }
   }
 
   getProducts() {

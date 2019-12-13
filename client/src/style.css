@@ -30,7 +30,7 @@
   flex-grow: 1;
   max-width: 90rem;
   padding: 1.5rem 1rem;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-box-align: start;
@@ -381,7 +381,7 @@
   width: 98%;
   max-width: 1414px;
   padding: 0 0 .5rem 0;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
   /* background-color: #0058a3; */
 }
 
