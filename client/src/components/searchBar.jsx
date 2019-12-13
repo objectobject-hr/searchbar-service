@@ -2,7 +2,7 @@ import React from 'react';
 import SearchDrop from './searchDrop.jsx';
 
 const SearchBar = ({flasher, searchText, searchType}) => (
-  <div data-namespace="search-box" data-version="v1.130.0">
+  <div data-version="v1.130.0">
     <form role="search" action="https://www.ikea.com/us/en/search/" className="search-box">
       <div className="search-field">
         <span className="hnf-btn__icon-bg"></span>

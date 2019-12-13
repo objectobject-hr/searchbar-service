@@ -52,7 +52,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="sb-searchbar">
           <Cabeza />
           <div data-namespace="search-box-overlay"></div>
           <SearchBar flasher={this.state.flasher} searchText={this.state.searchText} searchType={this.searchType}/>

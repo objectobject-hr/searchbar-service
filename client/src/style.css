@@ -15,7 +15,7 @@
   z-index: 9;
   width: 100%;
   background: #fff;
-  box-shadow: 0 10px 10px 2px rgba(0,0,0,.2);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
 }
 
 .sb-img {
@@ -31,6 +31,7 @@
     line-height: 1.5;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     /* font: 100% sans-serif; */
     box-sizing: border-box;
@@ -79,15 +80,15 @@
   padding: 0;
   left: -.5rem;
   top: -.5rem;
+  width: 100%;
 }
 
 .sb-header__container {
-  padding: .5rem 1rem .5rem 3rem;
+  padding: .5rem .5rem .5rem 1rem;
   margin: auto;
   max-width: 90rem;
   max-height: 48px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -95,13 +96,14 @@
   font-size: 0.75rem;
 }
 
+/* .header__icon-list {
+  padding-right: 1px;
+} */
+
 .header__icon-list-item {
   display: inline-block;
 }
 
-.header__icon-list {
-  padding-right: 40px;
-}
 
 .header__ikea-logo {
   width: 6.25rem;
@@ -117,7 +119,7 @@
 
 .header__main-nav {
   background: #fff;
-  display: inline-block;
+  display: flex;
   flex-grow: 1;
   position: static;
   width: auto;
@@ -267,14 +269,12 @@
 .hnf-svg-icon--100 {
   margin-left: .25rem;
   width: 1rem;
-  height: 1rem;
 }
 
 .searchbar-a {
   background: transparent;
   background-color: transparent;
 }
-
 
 .main-bygga-menu {
   display: flex;
@@ -297,6 +297,7 @@
   word-break: break-word;
   white-space: nowrap;
   font-size: 16px;
+  padding-top: 2px;
 }
 
 .main-bygga-menu__button--svg {
@@ -309,7 +310,7 @@
 .main-bygga-menu__item {
   border-bottom: none;
   list-style-type: none;
-  padding-left: 24px;
+  padding-left: 10px;
   font-size: 16px;
 }
 
@@ -338,7 +339,6 @@
 
 .search-box {
   position: relative;
-  z-index: 11;
   line-height: 1.5rem;
   background: #fff;
   /* padding-left: 14rem; */
@@ -349,8 +349,7 @@
 
 .search-field {
   position: relative;
-  z-index: 10;
-  width: 100%;
+  width: 99%;
   max-width: 1414px;
   padding: 0 0 .5rem 0;
   margin: 0 1rem;
@@ -416,12 +415,13 @@
   padding-left: 0;
   padding-top: .4rem;
   padding-bottom: .6rem;
+  width: 100%;
 }
 
 .top-menu-d {
   background-color: #eee;
-  width: 99%;
-  padding: .3rem .3rem .1rem .3rem ;
+  width: 100%;
+  padding: 0 0 0 1.65rem ;
 }
 
 .top-menu__item {
