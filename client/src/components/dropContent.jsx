@@ -1,5 +1,4 @@
 import React from 'react';
-import PrimeDropContent from './primDropContent.jsx';
 import PrimDropContent from './primDropContent.jsx';
 
 var lex = ["lex", "lex drawer unit", "rmchair", "lex desk", "rea rug", "lgot"];
@@ -8,8 +7,7 @@ var clum = ["IKEA ART EVENT 2019 Limited Collection", "The art of organizing: to
 const DropContent = ({searchText, sliced, suggestions}) => (
   <div className="sb-search-results">
     {searchText.length ? (
-    <div>
-      
+    <div className="sb-search-results">
       <ol className="dd-sb-search-results__list sb-search-results__container">
         {suggestions.map((item, i) => (
           <li style={{paddingBottom: '1rem', fontSize: 'large'}} className="dd-sb-search-results-item" key={i}>
