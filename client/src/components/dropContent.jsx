@@ -45,6 +45,15 @@ const DropContent = () => (
         <li className="dd-sb-search-results-item dd-sb-product-suggestions-item" key={i}>
           <a className="dd-sb-search-results-item__link dd-sb-product-suggestions-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
             <img alt class="dd-sb-product-suggestions-item__image" src="https://www.ikea.com/us/en/images/products/alex-drawer-unit-white__0087723_PE217289_S5.JPG?f=xu"></img>
+            <div class="dd-sb-product-suggestions-item__product-info">
+              <p class="dd-sb-product-suggestions-item__heading">ALEX</p>
+              <p class="dd-sb-product-suggestions-item__details">
+                <span class="dd-sb-product-suggestions-item__type">Drawer unit</span>
+                <span class="dd-sb-product-suggestions-item__measurements">
+                  , 14 1/8x27 1/2 "
+                </span>
+              </p>
+            </div>
           </a>
         </li>
       ))}
