@@ -16,7 +16,7 @@ const DropContent = () => (
         </li>
       ))}
     </ol>
-    <ol className="dd-sb-search-results__list sb-search-results__container">
+    <ol className="dd-sb-search-results__list sb-search-results__container" style={{borderLeft: 'gainsboro 1px solid'}}>
       {lex.map((item, i) => (
         <li className="dd-sb-search-results-item " key={i}>
           <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
@@ -26,7 +26,7 @@ const DropContent = () => (
         </li>
       ))}
     </ol>
-    <ol className="dd-sb-search-results__list sb-search-results__container">
+    <ol className="dd-sb-search-results__list sb-search-results__container" style={{borderLeft: 'gainsboro 1px solid'}}>
       {lex.map((item, i) => (
         <li className="dd-sb-search-results-item" key={i}>
           <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
