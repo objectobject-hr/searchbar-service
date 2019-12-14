@@ -1,16 +1,20 @@
 import React from 'react';
 
 var pops = ["desk", "dresser", "tv stand", "mirror", "shelves", "kallax"];
+var lex = ["lex", "lex drawer unit", "rmchair", "lex desk", "rea rug", "lgot"];
+
 
 const DropContent = () => (
   <div>
-    <ol className="search-results__list">
-      <li className="search-results-item">
-        <a className="search-results-item__link" href="https://www.ikea.com/us/en/search/?q=alex">
-          a
-          <b>lex</b>
-        </a>
-      </li>
+    <ol className="dd-sb-search-results__list">
+      {lex.map((item, i) => (
+        <li className="dd-sb-search-results-item sb-search-results__container" key={i}>
+          <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+            a
+            <b>{item}</b>
+          </a>
+        </li>
+      ))}
     </ol>
   </div>
 )
