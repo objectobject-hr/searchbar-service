@@ -31,7 +31,7 @@ const SearchBar = ({sliced, suggestions, flasher, searchText, searchType, show, 
       </div>
       <div style={{padding: '0 8px 0px 8px', display: 'flex', justifyContent: 'center'}}>
         <SearchDrop show={show} onClose={onClose}>
-          <DropContent sliced={sliced} suggestions={suggestions}/>
+          <DropContent searchText={searchText} sliced={sliced} suggestions={suggestions}/>
         </SearchDrop> 
       </div>
     </form>
