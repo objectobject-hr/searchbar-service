@@ -5,10 +5,30 @@ var lex = ["lex", "lex drawer unit", "rmchair", "lex desk", "rea rug", "lgot"];
 
 
 const DropContent = () => (
-  <div>
-    <ol className="dd-sb-search-results__list">
+  <div className="sb-search-results">
+    <ol className="dd-sb-search-results__list sb-search-results__container">
       {lex.map((item, i) => (
-        <li className="dd-sb-search-results-item sb-search-results__container" key={i}>
+        <li className="dd-sb-search-results-item" key={i}>
+          <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+            a
+            <b>{item}</b>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <ol className="dd-sb-search-results__list sb-search-results__container">
+      {lex.map((item, i) => (
+        <li className="dd-sb-search-results-item " key={i}>
+          <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+            a
+            <b>{item}</b>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <ol className="dd-sb-search-results__list sb-search-results__container">
+      {lex.map((item, i) => (
+        <li className="dd-sb-search-results-item" key={i}>
           <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
             a
             <b>{item}</b>
