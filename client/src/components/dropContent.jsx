@@ -2,7 +2,7 @@ import React from 'react';
 
 var pops = ["desk", "dresser", "tv stand", "mirror", "shelves", "kallax"];
 var lex = ["lex", "lex drawer unit", "rmchair", "lex desk", "rea rug", "lgot"];
-
+var clum = ["rmchair", "lex desk", "rea rug", "lgot"];
 
 const DropContent = () => (
   <div className="sb-search-results">
@@ -17,7 +17,22 @@ const DropContent = () => (
       ))}
     </ol>
     <ol className="dd-sb-search-results__list sb-search-results__container" style={{alignself: 'stretch', borderLeft: 'gainsboro 1px solid'}}>
-      {lex.map((item, i) => (
+      <li className="dd-sb-search-results-item--planner">
+        <a className="dd-sb-pri-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=alex`}>
+          <b>Algot Planner</b>
+        </a>
+      </li>
+      <li className="dd-sb-search-results-item--planner">
+        <a className="dd-sb-pri-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=alex`}>
+          <b>Alex drawer unit</b>
+        </a>
+      </li>
+      <li className="dd-sb-search-results-item--planner">
+        <a className="dd-sb-pri-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=alex`}>
+          <b>Algot Planner</b>
+        </a>
+      </li>
+      {clum.map((item, i) => (
         <li style={{paddingBottom: '1.6rem', fontSize: 'large'}} key={i}>
           <a className="dd-sb-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
             a

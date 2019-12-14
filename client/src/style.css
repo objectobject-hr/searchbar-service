@@ -58,7 +58,7 @@
 .dd-sb-search-results__list {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding-bottom: .5rem;
   margin: 0;
   list-style: none;
 }
@@ -75,10 +75,21 @@
   text-decoration: none;
 }
 
+.dd-sb-pri-search-results-item__link-nd {
+  padding: 1rem 2rem;
+  color: black;
+  text-decoration: none;
+}
+
 .dd-sb-search-results-item__link-rd {
   padding: 1rem 2rem;
   color: black;
   text-decoration: none;
+}
+
+.dd-sb-search-results-item--planner {
+  padding-bottom: 1.6rem;
+  font-size: large;
 }
 
 .sb-img {
