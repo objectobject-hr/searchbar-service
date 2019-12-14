@@ -9,7 +9,7 @@ const DropContent = () => (
     <ol className="dd-sb-search-results__list sb-search-results__container">
       {lex.map((item, i) => (
         <li style={{paddingBottom: '1rem', fontSize: 'large'}} className="dd-sb-search-results-item" key={i}>
-          <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+          <a className="dd-sb-cero-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
             a
             <b>{item}</b>
           </a>
@@ -40,12 +40,11 @@ const DropContent = () => (
         </li>
       ))}
     </ol>
-    <ol className="dd-sb-search-results__list sb-search-results__container" style={{borderLeft: 'gainsboro 1px solid'}}>
+    <ol className="dd-sb-search-results__list sb-search-results__container dd-sb-search-results__container--product-suggestions" style={{borderLeft: 'gainsboro 1px solid'}}>
       {lex.map((item, i) => (
-        <li className="dd-sb-search-results-item" key={i}>
-          <a className="dd-sb-search-results-item__link-rd" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
-            a
-            <b>{item}</b>
+        <li className="dd-sb-search-results-item dd-sb-product-suggestions-item" key={i}>
+          <a className="dd-sb-search-results-item__link dd-sb-product-suggestions-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+            <img alt class="dd-sb-product-suggestions-item__image" src="https://www.ikea.com/us/en/images/products/alex-drawer-unit-white__0087723_PE217289_S5.JPG?f=xu"></img>
           </a>
         </li>
       ))}
