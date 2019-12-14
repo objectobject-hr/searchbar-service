@@ -8,8 +8,18 @@ const DropContent = () => (
   <div className="sb-search-results">
     <ol className="dd-sb-search-results__list sb-search-results__container">
       {lex.map((item, i) => (
-        <li className="dd-sb-search-results-item" key={i}>
+        <li style={{paddingBottom: '1rem', fontSize: 'large'}} className="dd-sb-search-results-item" key={i}>
           <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+            a
+            <b>{item}</b>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <ol className="dd-sb-search-results__list sb-search-results__container" style={{alignself: 'stretch', borderLeft: 'gainsboro 1px solid'}}>
+      {lex.map((item, i) => (
+        <li style={{paddingBottom: '1.6rem', fontSize: 'large'}} key={i}>
+          <a className="dd-sb-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
             a
             <b>{item}</b>
           </a>
@@ -18,18 +28,8 @@ const DropContent = () => (
     </ol>
     <ol className="dd-sb-search-results__list sb-search-results__container" style={{borderLeft: 'gainsboro 1px solid'}}>
       {lex.map((item, i) => (
-        <li className="dd-sb-search-results-item " key={i}>
-          <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
-            a
-            <b>{item}</b>
-          </a>
-        </li>
-      ))}
-    </ol>
-    <ol className="dd-sb-search-results__list sb-search-results__container" style={{borderLeft: 'gainsboro 1px solid'}}>
-      {lex.map((item, i) => (
         <li className="dd-sb-search-results-item" key={i}>
-          <a className="dd-sb-search-results-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
+          <a className="dd-sb-search-results-item__link-rd" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
             a
             <b>{item}</b>
           </a>
