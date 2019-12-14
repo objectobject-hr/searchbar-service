@@ -10,7 +10,8 @@ class App extends React.Component {
     this.state = {
       flasher: "",
       searchText: "",
-      barOpen: false
+      barOpen: false,
+      suggestions: []
     };
 
     this.flasher = this.flasher.bind(this);
@@ -39,7 +40,10 @@ class App extends React.Component {
   getProducts() {
     axios.get(`/allProducts`)
     .then(({data}) => {
-      console.log(data);
+      this.setState({
+        suggestions: data
+      });
+      console.log(this.state.suggestions);
     })
     .catch((err) => console.error(err));
   }
@@ -68,7 +72,7 @@ class App extends React.Component {
       <div className="sb-searchbar">
           <Cabeza />
           <div data-namespace="search-box-overlay"></div>
-          <SearchBar flasher={this.state.flasher} searchText={this.state.searchText} searchType={this.searchType} show={this.state.barOpen} onClose={this.barToggle}/>
+          <SearchBar suggestions={this.state.suggestions} flasher={this.state.flasher} searchText={this.state.searchText} searchType={this.searchType} show={this.state.barOpen} onClose={this.barToggle}/>
       </div>
     )
   }

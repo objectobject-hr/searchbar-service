@@ -2,7 +2,7 @@ import React from 'react';
 import SearchDrop from './searchDrop.jsx';
 import DropContent from './dropContent.jsx';
 
-const SearchBar = ({flasher, searchText, searchType, show, onClose}) => (
+const SearchBar = ({suggestions, flasher, searchText, searchType, show, onClose}) => (
   <div data-version="v1.130.0">
     <form role="search" action="https://www.ikea.com/us/en/search/" className="search-box">
       <div style={{padding: '0 8px 0 0', display: 'flex', justifyContent: 'center'}}>
@@ -31,7 +31,7 @@ const SearchBar = ({flasher, searchText, searchType, show, onClose}) => (
       </div>
       <div style={{padding: '0 8px 0px 8px', display: 'flex', justifyContent: 'center'}}>
         <SearchDrop show={show} onClose={onClose}>
-          <DropContent />
+          <DropContent suggestions={suggestions}/>
         </SearchDrop> 
       </div>
     </form>
