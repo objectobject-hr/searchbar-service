@@ -4,7 +4,7 @@ var pops = ["desk", "dresser", "tv stand", "mirror", "shelves", "kallax"];
 var lex = ["lex", "lex drawer unit", "rmchair", "lex desk", "rea rug", "lgot"];
 var clum = ["IKEA ART EVENT 2019 Limited Collection", "The art of organizing: toy storage", "How to make a DIY canvas for your artwork"];
 
-const DropContent = ({suggestions}) => (
+const DropContent = ({sliced, suggestions}) => (
   <div className="sb-search-results">
     <ol className="dd-sb-search-results__list sb-search-results__container">
       {suggestions.map((item, i) => (
@@ -24,33 +24,33 @@ const DropContent = ({suggestions}) => (
       </li>
       <li className="dd-sb-search-results-item--planner">
         <a className="dd-sb-sec-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=alex`}>
-          <b>Alex drawer unit</b>
+          <b>{suggestions[1].secondRow}</b>
         </a>
       </li>
       <li className="dd-sb-search-results-item--planner">
         <a className="dd-sb-sec-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=alex`}>
-          <b>Algot Planner</b>
+          <b>{suggestions[2].secondRow}</b>
         </a>
       </li>
-      {clum.map((item, i) => (
+      {sliced.map((item, i) => (
         <li style={{paddingBottom: '.5rem', fontSize: 'large'}} key={i}>
-          <a className="dd-sb-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
-            {item}
+          <a className="dd-sb-search-results-item__link-nd" href={`https://www.ikea.com/us/en/search/?q=alex`}>
+            {item.secondRow}
           </a>
         </li>
       ))}
     </ol>
     <ol className="dd-sb-search-results__list sb-search-results__container dd-sb-search-results__container--product-suggestions" style={{borderLeft: 'gainsboro 1px solid'}}>
-      {lex.map((item, i) => (
+      {suggestions.map((item, i) => (
         <li className="dd-sb-search-results-item dd-sb-product-suggestions-item" key={i}>
-          <a className="dd-sb-search-results-item__link dd-sb-product-suggestions-item__link" href={`https://www.ikea.com/us/en/search/?q=a${item}`}>
-            <img className="dd-sb-product-suggestions-item__image" src="https://www.ikea.com/us/en/images/products/alex-drawer-unit-white__0087723_PE217289_S5.JPG?f=xu"></img>
+          <a className="dd-sb-search-results-item__link dd-sb-product-suggestions-item__link" href={`https://www.ikea.com/us/en/search/?q=alex`}>
+            <img className="dd-sb-product-suggestions-item__image" src={item.img}></img>
             <div className="dd-sb-product-suggestions-item__product-info">
-              <p className="dd-sb-product-suggestions-item__heading">ALEX</p>
+              <p className="dd-sb-product-suggestions-item__heading">{item.nombre}</p>
               <p className="dd-sb-product-suggestions-item__details">
-                <span className="dd-sb-product-suggestions-item__type">Drawer unit</span>
+                <span className="dd-sb-product-suggestions-item__type">{item.descrip}</span>
                 <span className="dd-sb-product-suggestions-item__measurements">
-                  , 14 1/8x27 1/2 "
+                  , {item.stats}"
                 </span>
               </p>
             </div>
