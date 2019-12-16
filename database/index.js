@@ -13,7 +13,7 @@ db.connect((err) => {
 
 
 const getProducts = function(id, callback) {
-  db.query(`SELECT * FROM cranberries WHERE letter IN ('b')`, (err, result) => {
+  db.query(`SELECT * FROM cranberries WHERE letter IN ('${id}')`, (err, result) => {
     if (err) {
       console.error(err);
       callback(err);

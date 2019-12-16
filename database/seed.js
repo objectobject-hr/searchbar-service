@@ -39,7 +39,7 @@ const insertMockData = function() {
   // Complete me please
   var prods = createProducts();
   prods.forEach(({ letter, primero, secondRow, img, nombre, descrip, stats }) => {
-    db.query(`INSERT INTO cranberries (letter, primero, secondRow, img, nombre, descrip, stats) VALUES("${letter}", "${primero}", "${secondRow}", "${img}", "${nombre}", "${descrip},", "${stats}")`)
+    db.db.query(`INSERT INTO cranberries (letter, primero, secondRow, img, nombre, descrip, stats) VALUES("${letter}", "${primero}", "${secondRow}", "${img}", "${nombre}", "${descrip}", "${stats}")`)
   })
   //db.query(`INSERT INTO cranberries (letter, primero, secondRow, img, nombre, descrip, stats) VALUES("b", "ed frame", "BESTA Planner", "https://www.ikea.com/us/en/images/products/strandmon-wing-chair__0690287_PE723209_S5.JPG?f=xu", "KALLAX", "Shelf unit,", "30 3/8x57 7/8")`)
 };

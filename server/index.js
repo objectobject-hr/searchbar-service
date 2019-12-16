@@ -10,10 +10,10 @@ app.use(parser.urlencoded({extended: true}));
 
 app.use(express.static(__dirname + '/../client/dist'));
 
-app.get("/searchbar", (req, res) => {
-  dab.getProducts(req, (err, data) => {
+app.get("/searchbar/:id", (req, res) => {
+  console.log(req.params);
+  dab.getProducts(req.params.id, (err, data) => {
     if (err) {
-      console.log(`you're inside error if-statement`)
       console.error(err);
       res.status(404).send("error retrieving products");
     } else {
