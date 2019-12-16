@@ -33,13 +33,13 @@ class App extends React.Component {
       searchText: e.target.value
     });
     console.log(this.state.searchText);
-    if (this.state.searchText.length === 0) {
-      this.flasher();
-    }
+    // if (this.state.searchText.length === 0) {
+    //   this.flasher();
+    // }
   }
 
   getProducts() {
-    axios.get(`/allProducts`)
+    axios.get(`/searchbar`)
     .then(({data}) => {
       var slug = data.slice(3)
       this.setState({

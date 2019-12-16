@@ -1,6 +1,6 @@
 const express = require('express');
 const parser = require('body-parser');
-const db = require("../database");
+const dab = require("../database/index.js");
 
 const app = express();
 const PORT = 3002;
@@ -10,9 +10,10 @@ app.use(parser.urlencoded({extended: true}));
 
 app.use(express.static(__dirname + '/../client/dist'));
 
-app.get("/allProducts", (req, res) => {
-  db.getProducts(req, (err, data) => {
+app.get("/searchbar", (req, res) => {
+  dab.getProducts(req, (err, data) => {
     if (err) {
+      console.log(`you're inside error if-statement`)
       console.error(err);
       res.status(404).send("error retrieving products");
     } else {

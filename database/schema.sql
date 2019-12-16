@@ -11,8 +11,8 @@ CREATE TABLE cranberries (
   secondRow varchar(60) NOT NULL,
   img varchar(300),
   nombre varchar(25) NOT NULL,
-  descrip varchar(30) NOT NULL,
-  stats varchar(30) NOT NULL DEFAULT '',
+  descrip varchar(40) NOT NULL,
+  stats varchar(40) NOT NULL DEFAULT '',
   PRIMARY KEY (ID)
 );
 

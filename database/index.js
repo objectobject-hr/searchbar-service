@@ -11,6 +11,23 @@ db.connect((err) => {
   }
 })
 
+
+const getProducts = function(id, callback) {
+  db.query(`SELECT * FROM cranberries WHERE letter IN ('b')`, (err, result) => {
+    if (err) {
+      console.error(err);
+      callback(err);
+    } else {
+      callback(null, result);
+    }
+  });
+}
+
+
+module.exports.getProducts = getProducts;
+module.exports.db = db;
+
+
 // const response = (err, result, callback) => {
 //     if (err) {
 //       callback(err);
@@ -18,18 +35,3 @@ db.connect((err) => {
 //       callback(null, result);
 //     }
 // };
-
-const getProducts = function(id, callback) {
-  db.query(`SELECT * FROM cranberries`, (err, result) => {
-  if (err) {
-    console.error(err);
-    callback(err);
-  } else {
-    callback(null, result);
-  }
-  });
-}
-
-module.exports = {
-  getProducts
-} ;
