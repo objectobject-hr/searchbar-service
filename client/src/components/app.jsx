@@ -32,21 +32,26 @@ class App extends React.Component {
     this.setState({
       searchText: e.target.value
     });
-    console.log(this.state.searchText);
+    this.getProducts(e.target.value[0]);
     // if (this.state.searchText.length === 0) {
     //   this.flasher();
     // }
   }
 
-  getProducts() {
-    axios.get(`/searchbar`)
+  getProducts(id) {
+    if (id === undefined) {
+      id = "a";
+    }
+    console.log(id)
+    axios.get(`/searchbar/${id}`)
     .then(({data}) => {
+      console.log(data);
       var slug = data.slice(3)
       this.setState({
         suggestions: data,
         slicedSugs: slug
       });
-      console.log(this.state.suggestions)
+      // console.log(this.state.suggestions)
     })
     .catch((err) => console.error(err));
   }
@@ -67,7 +72,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.flasher();
-    this.getProducts();
+    this.getProducts('a');
   }
 
   render() {
