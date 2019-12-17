@@ -15,7 +15,7 @@
 }
 
 .sb-dropdown {
-  position: relative;
+  position: absolute;
   z-index: 9;
   width: 100%;
   background: #fff;

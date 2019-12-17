@@ -42,10 +42,8 @@ class App extends React.Component {
     if (id === undefined) {
       id = "a";
     }
-    console.log(id)
     axios.get(`/searchbar/${id}`)
     .then(({data}) => {
-      console.log(data);
       var slug = data.slice(3)
       this.setState({
         suggestions: data,
